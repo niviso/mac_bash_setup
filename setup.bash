@@ -10,4 +10,4 @@ while [ -L "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
     SOURCE=$DIR/$TARGET # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
   fi
 done
-echo "source $DIR/init.bash" >>~/.bash_profile
+echo "source $DIR/scripts/init.bash" >>~/.bash_profile
